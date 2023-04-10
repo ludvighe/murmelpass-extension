@@ -1,0 +1,20 @@
+{
+  "name": "Murmelpass",
+  "version": "0.0.1",
+  "description": "A password manager that doesn't store your passwords.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "murmel.png",
+    "32": "murmel.png",
+    "48": "murmel.png",
+    "128": "murmel.png"
+  },
+  "manifest_version": 3,
+
+  "background": {
+    "service_worker": "main.js"
+  },
+  "permissions": ["activeTab", "scripting"]
+}

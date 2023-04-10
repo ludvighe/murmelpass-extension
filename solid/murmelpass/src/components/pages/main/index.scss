@@ -1,0 +1,90 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+
+  height: 450px;
+  padding: 2em;
+
+  #murmel-img {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+
+    height: 100px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  label {
+    color: #ffffff99;
+  }
+
+  #url-input,
+  #password-input,
+  #username-input {
+    background-color: var(--clr-background-light);
+    color: white;
+
+    * {
+      color: white !important;
+    }
+  }
+
+  .length-input-container {
+    width: 100%;
+
+    #length-number {
+      width: 60px;
+      background-color: transparent;
+      color: white;
+      font-size: large;
+      border: none;
+      &:active,
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        border: none;
+        outline: none;
+      }
+    }
+
+    #length-rangeslider {
+      width: calc(100% - 70px);
+      border-radius: 10px;
+      -webkit-appearance: none;
+      height: 5px;
+      background: #ffffffaa;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: 0.2s;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: var(--clr-primary);
+        cursor: pointer;
+        border-radius: 100%;
+      }
+      &::-moz-range-thumb {
+        border-radius: 100%;
+        width: 25px;
+        height: 25px;
+        background: var(--clr-primary);
+        cursor: pointer;
+      }
+    }
+  }
+}
